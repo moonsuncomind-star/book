@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainpuri Online Read Books</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background for the whole page */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a0a0a0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #707070;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg p-4 md:p-6 rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2 md:mb-0">
+                Mainpuri Online Books
+            </h1>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 font-medium">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 font-medium">Categories</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 font-medium">About</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition-colors duration-300 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-4 md:p-8">
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Featured Books</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Book Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/400x600/FFD700/000000?text=Novel+Cover+1" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Tales from Mainpuri</h3>
+                        <p class="text-sm text-gray-600 mb-4">By A. Local Author</p>
+                        <p class="text-gray-700 text-base mb-4 line-clamp-3">
+                            A compelling collection of short stories depicting the vibrant culture and hidden gems of Mainpuri.
+                        </p>
+                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-md">
+                            Read Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/400x600/A0B2C7/000000?text=History+Book" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">History of Mainpuri</h3>
+                        <p class="text-sm text-gray-600 mb-4">By Dr. Historian</p>
+                        <p class="text-gray-700 text-base mb-4 line-clamp-3">
+                            An in-depth look into the rich historical tapestry of Mainpuri, from ancient times to the present day.
+                        </p>
+                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-md">
+                            Read Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/400x600/C8A2C8/000000?text=Poetry+Collection" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mainpuri Poets' Anthology</h3>
+                        <p class="text-sm text-gray-600 mb-4">Compiled by Literary Circle</p>
+                        <p class="text-gray-700 text-base mb-4 line-clamp-3">
+                            A beautiful compilation of poetic works from renowned and emerging poets of Mainpuri.
+                        </p>
+                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-md">
+                            Read Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/400x600/87CEEB/000000?text=Travel+Guide" alt="Book Cover" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Discover Mainpuri</h3>
+                        <p class="text-sm text-gray-600 mb-4">By A Local Explorer</p>
+                        <p class="text-gray-700 text-base mb-4 line-clamp-3">
+                            A comprehensive guide to the lesser-known attractions, traditions, and local cuisine of Mainpuri.
+                        </p>
+                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-md">
+                            Read Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Bar Section -->
+        <section class="my-10 p-6 bg-white rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">Find Your Next Read</h2>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <input type="text" placeholder="Search for books, authors, or topics..."
+                       class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+                <button class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-md">
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Call to Action / Join Section -->
+        <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white p-8 rounded-xl shadow-lg text-center mb-10">
+            <h2 class="text-3xl font-bold mb-4">Join Our Reading Community!</h2>
+            <p class="text-lg mb-6">
+                Explore a world of knowledge and stories. Sign up for free and start reading today.
+            </p>
+            <button class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-900 transition-all duration-300 transform hover:scale-105">
+                Sign Up Now
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 md:p-8 rounded-t-xl shadow-inner">
+        <div class="container mx-auto text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">Mainpuri Online Books</h4>
+                    <p class="text-sm text-gray-400">Your gateway to literature from and about Mainpuri.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">Quick Links</h4>
+                    <ul>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">Connect With Us</h4>
+                    <p class="text-gray-400 text-sm">Email: info@mainpuribooks.com</p>
+                    <p class="text-gray-400 text-sm">Follow us on social media!</p>
+                    <!-- Placeholder for social media icons -->
+                    <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.47-7-7.25h2c0 2.21 1.79 4 4 4v2.25zM12 20c-1.4 0-2.73-.3-3.95-.83L12 18V20zM12 4c-1.4 0-2.73.3-3.95.83L12 6V4zm1 15.93V17c2.21 0 4-1.79 4-4h2c0 3.78-3.05 6.76-7 7.25zM12 6c1.4 0 2.73.3 3.95.83L12 8V6zm5-2c-3.95.49-7 3.47-7 7.25v.75c0 3.78 3.05 6.76 7 7.25z"/></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 6c-0.8 0.4-1.6 0.7-2.5 0.9 0.9-0.5 1.6-1.4 1.9-2.4 -0.9 0.5-1.9 0.9-2.9 1.1C18.4 3.7 17.2 3 15.9 3c-2.3 0-4.2 1.9-4.2 4.2 0 0.3 0 0.7 0.1 1C7.7 8.3 4.1 6.3 1.7 3.1c-0.4 0.7-0.6 1.5-0.6 2.4 0 1.5 0.8 2.8 2 3.6-0.7 0-1.3-0.2-1.9-0.5v0.1c0 2 1.4 3.7 3.3 4.1-0.3 0.1-0.7 0.1-1.1 0.1-0.3 0-0.6 0-0.9-0.1 0.5 1.7 2 3.1 3.7 3.4-1.4 1.1-3.2 1.8-5.2 1.8-0.3 0-0.7 0-1 0c1.8 1.2 3.9 1.9 6.2 1.9 7.5 0 11.6-6.2 11.6-11.6 0-0.2 0-0.4 0-0.6 0.8-0.6 1.5-1.4 2-2.3z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-4 text-center">
+                <p class="text-sm text-gray-400">&copy; 2025 Mainpuri Online Books. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Placeholder for future JavaScript interactivity
+        // For example, dynamic loading of books, search functionality, etc.
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Mainpuri Online Books website loaded successfully!');
+            // You can add more complex JS here later, e.g., fetching book data from an API
+        });
+    </script>
+</body>
+</html>
